@@ -1,0 +1,3 @@
+class Meetingspeaker < ApplicationRecord
+  
+end
