@@ -1,6 +1,11 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+post "meetings" => "meetings#create"
+get "meetings" => "meetings#index"
 
-  # Defines the root path route ("/")
-  # root "articles#index"
+post "speakers" => "speakers#create"
+get "speakers" => "speakers#index"
+
+post "meeting_speakers" => "meeting_speakers#create"
+get "meeting_speakers" => "meeting_speakers#index"
+
 end

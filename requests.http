@@ -1,0 +1,41 @@
+POST http://localhost:3000/meeting_speakers
+Content-Type: application/json
+
+{
+  "speaker_id": 3,
+  "meeting_id": 1
+
+}
+
+###index
+GET http://localhost:3000/meeting_speakers
+
+###
+
+POST http://localhost:3000/speakers
+Content-Type: application/json
+
+{
+  "first_name": "Montcrieff",
+  "last_name": "Witherstead",
+  "email": "Montcrieff@mail.com"
+}
+###
+#index
+GET http://localhost:3000/speakers
+
+###
+
+POST http://localhost:3000/meetings
+Content-Type: application/json
+
+{
+  "title":"New Vending Machine",
+  "agenda":"Talk about morale",
+  "location":"Conference room 4",
+  "time":"11:30"
+}
+
+###
+#index 
+Get http://localhost:3000/meetings
